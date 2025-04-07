@@ -1,26 +1,40 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Etiquetas HTML</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/styles/styles.css">
 </head>
 <body>
-  <header>
-    <h1> Etiquetas HTML</h1>
-  </header>
-  <nav>
-    <a href="index.html">Ir a Login</a> | 
-    <a href="profile.html">Ir a Perfil</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Diego Web</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link active" href="tags.html">Tags</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Perfil</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
-  <p>Parrafo de ejemplo, en este parrafo quiero probar que tal se ve el texto al escribir texto sobre información de mi pagina, hay diferentes estilos que podemos utilizar para la pagina, negritas, subindices, etc aparte de muchas etiquetas que nos apoyan.</p>
-  <p>Aquí hay un texto en <strong>negrita</strong>.</p>
-  <p>Texto con subíndice: CO<sub>2</sub></p>
-  <p>Texto con superíndice: H<sup>2</sup>O</p>
-  <br />
-  <div>
-    <p>Este es un contenido dentro de un div.  Y un logo de ejemplo, en este caso del reto</p>
-    <img src="/public/src/original.png" alt="Logo de ejemplo" width="150">
+
+  <header>
+    <h1>Etiquetas HTML</h1>
+  </header>
+
+  <div class="container">
+    <p>Este párrafo es un ejemplo de cómo se ve el texto cuando hablamos sobre la información de la página. Hay diferentes estilos que podemos utilizar como negritas, subíndices, etc. Aparte de muchas etiquetas que nos apoyan.</p>
+
+    <p>Aquí hay un texto en <strong>negrita</strong>.</p>
+    <p>Texto con subíndice: CO<sub>2</sub></p>
+    <p>Texto con superíndice: H<sup>2</sup>O</p>
+
+    <div class="mt-4">
+      <p>Este es un contenido dentro de un div. Y un logo de ejemplo, en este caso del reto:</p>
+      <img src="/public/src/original.png" alt="Logo de ejemplo" width="150">
+    </div>
   </div>
 </body>
 </html>
